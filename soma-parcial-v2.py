@@ -1,13 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
-
-
-import numpy
-
-
-# In[2]:
+# In[7]:
 
 
 #cabeçalho obtido do repositorio "inset/intset"
@@ -19,7 +13,7 @@ print("Digite o numero de parcelas xni 'tamanho da série':")
 tamanho=input()
 
 
-# In[3]:
+# In[8]:
 
 
 #indice inicial
@@ -27,7 +21,7 @@ print("Digite o indice inicial")
 indice=input()
 
 
-# In[6]:
+# In[9]:
 
 
 lista=[]
@@ -52,7 +46,7 @@ printl=lista[995000:1000000]
 print(printl)
 
 
-# In[5]:
+# In[10]:
 
 
 #escreve a lista em modo string no arquivo nomeado
