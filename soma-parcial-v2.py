@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[52]:
+# In[3]:
 
 
 import numpy
 
 
-# In[54]:
+# In[2]:
 
 
 #cabeçalho obtido do repositorio "inset/intset"
@@ -19,7 +19,7 @@ print("Digite o numero de parcelas xni 'tamanho da série':")
 tamanho=input()
 
 
-# In[55]:
+# In[3]:
 
 
 #indice inicial
@@ -27,14 +27,12 @@ print("Digite o indice inicial")
 indice=input()
 
 
-# In[56]:
+# In[6]:
 
 
 lista=[]
-serie=numpy.float128(tamanho)
-xni=numpy.float128(indice)
-
-listaf=[]
+serie=float(tamanho)
+xni=float(indice)
 
 while xni<=serie:
     #soma parcial da sequencia modificada
@@ -48,14 +46,23 @@ while xni<=serie:
         partx=partx+1/xni
         xni=xni+1
         lista.append(partx)
-print(lista[900000:1000000])
+#adicionar input para print da lista "intervalo"
+#print(lista[900000:1000000])
+printl=lista[995000:1000000]
+print(printl)
 
 
-# In[57]:
+# In[5]:
 
 
 #escreve a lista em modo string no arquivo nomeado
 demo_file = open('lista.txt','a')
-demo_file.write(str(lista))
+demo_file.write(str(printl))
 demo_file.close()
+
+
+# In[ ]:
+
+
+
 
