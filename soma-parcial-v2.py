@@ -54,9 +54,3 @@ demo_file = open('lista.txt','a')
 demo_file.write(str(printl))
 demo_file.close()
 
-
-# In[ ]:
-
-
-
-
